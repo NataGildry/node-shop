@@ -1,4 +1,5 @@
 export * from './user';
 export * from './mail';
 export * from './log';
+export * from './product';
 

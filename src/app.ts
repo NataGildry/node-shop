@@ -12,6 +12,7 @@ import * as path from 'path';
 import {config} from './config';
 import {userRouter} from './routes/user';
 import {ResponseStatusCodesEnum} from './constants';
+import {productRouter} from './routes/product';
 
 dotenv.config();
 
@@ -76,7 +77,7 @@ class App {
     private mountRoutes(): void {
       // this.app.use('/admin', adminRouter);
       // this.app.use('/auth', authRouter);
-      // this.app.use('/products', productRouter);
+      this.app.use('/products', productRouter);
       this.app.use('/users', userRouter);
     }
 }
