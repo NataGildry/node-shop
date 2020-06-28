@@ -13,8 +13,6 @@ import {config} from './config';
 import {authRouter, productRouter, userRouter} from './routes';
 import {ResponseStatusCodesEnum} from './constants';
 
-
-
 dotenv.config();
 
 const serverRequestLimit = rateLimit({
